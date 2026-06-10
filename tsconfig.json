@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ES2023",
+    "declaration": true,
+    "composite": true,
+    "incremental": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "strictPropertyInitialization": false,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "resolvePackageJsonImports": true,
+    "types": ["node"]
+  }
+}

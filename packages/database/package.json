@@ -1,0 +1,32 @@
+{
+  "type": "module",
+  "name": "@packages/database",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Leonardo L. Belloni",
+  "private": true,
+  "license": "UNLICENSED",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "imports": {
+    "#database/*": "./src/*"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.build.json"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.10",
+    "tsc-alias": "^1.8.17",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "@packages/config": "workspace:*",
+    "@packages/core": "workspace:*"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  }
+}
