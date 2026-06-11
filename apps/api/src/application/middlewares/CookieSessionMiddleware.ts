@@ -5,7 +5,7 @@ import { type NextFunction, type Request, type Response } from 'express';
 import session, { type Store } from 'express-session';
 import { type RedisClientType } from 'redis';
 
-import { ServerConfig } from '#api/config/ServerConfig.js';
+import { ServerConfig } from '@/config/ServerConfig.js';
 
 type CookieSessionMiddlewareOptions = {
   client: RedisClientType;

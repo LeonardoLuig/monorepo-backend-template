@@ -4,8 +4,8 @@ import { type NestExpressApplication } from '@nestjs/platform-express';
 import { DocumentBuilder, type OpenAPIObject, SwaggerModule } from '@nestjs/swagger';
 import cookieParser from 'cookie-parser';
 
-import { AppModule } from '#api/application/modules/AppModule.js';
-import { ServerConfig } from '#api/config/ServerConfig.js';
+import { AppModule } from '@/application/modules/AppModule.js';
+import { ServerConfig } from '@/config/ServerConfig.js';
 
 export class ServerApplication {
   constructor(private readonly app: NestExpressApplication) {}

@@ -1,5 +1,5 @@
-import { type CodeDescription } from '#core/common/code/Code.js';
-import { type Optional } from '#core/common/types/common-types.js';
+import { type CodeDescription } from '@/common/code/Code.js';
+import { type Optional } from '@/common/types/common-types.js';
 
 export interface CreateExceptionPayload<TData> {
   code: CodeDescription;

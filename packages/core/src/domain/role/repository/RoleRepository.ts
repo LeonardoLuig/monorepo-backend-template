@@ -1,7 +1,5 @@
-import { type RepositoryFindOptions } from '#core/common/repository/types/RepositoryFindOptions.js';
-import { type RepositoryPaginationResult } from '#core/common/repository/types/RepositoryPaginationResult.js';
-import { type Optional } from '#core/common/types/common-types.js';
-import { type Role } from '#core/domain/role/entity/Role.js';
+import { type Optional, type RepositoryFindOptions, type RepositoryPaginationResult } from '@/common/index.js';
+import { type Role } from '@/domain/role/entity/Role.js';
 
 export interface RoleRepository {
   findRoleById(by: { id: string }, options?: RepositoryFindOptions): Promise<Optional<Role>>;

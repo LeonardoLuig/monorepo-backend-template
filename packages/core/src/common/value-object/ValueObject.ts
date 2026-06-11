@@ -1,6 +1,6 @@
-import { Code } from '#core/common/code/Code.js';
-import { Exception } from '#core/common/exception/Exception.js';
-import { ClassValidator } from '#core/common/utils/class-validator/ClassValidator.js';
+import { Code } from '@/common/code/Code.js';
+import { Exception } from '@/common/exception/Exception.js';
+import { ClassValidator } from '@/common/utils/class-validator/ClassValidator.js';
 
 export class ValueObject {
   public async validate(): Promise<void> {

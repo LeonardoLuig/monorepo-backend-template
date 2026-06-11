@@ -1,6 +1,6 @@
 import { validate } from 'class-validator';
 
-import { type Optional } from '#core/common/types/common-types.js';
+import { type Optional } from '@/common/types/common-types.js';
 
 export interface ClassValidatorError {
   property: string;

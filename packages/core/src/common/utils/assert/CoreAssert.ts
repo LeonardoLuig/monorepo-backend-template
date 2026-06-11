@@ -1,4 +1,4 @@
-import { type Nullable, type Optional } from '#core/common/types/common-types.js';
+import { type Nullable, type Optional } from '@/common/types/common-types.js';
 
 export class CoreAssert {
   public static isTrue(expression: boolean, exception: Error): void {

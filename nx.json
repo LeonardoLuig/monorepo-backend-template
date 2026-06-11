@@ -3,11 +3,17 @@
   "targetDefaults": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": ["{projectRoot}/dist/**"],
+      "outputs": ["{projectRoot}/dist"],
       "cache": true
     },
     "dev": {
       "cache": false
+    },
+    "lint": {
+      "cache": true
+    },
+    "test": {
+      "cache": true
     }
   },
   "defaultBase": "master",

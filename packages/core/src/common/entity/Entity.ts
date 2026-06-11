@@ -1,7 +1,7 @@
-import { Code } from '#core/common/code/Code.js';
-import { Exception } from '#core/common/exception/Exception.js';
-import { type Optional } from '#core/common/types/common-types.js';
-import { ClassValidator, type ClassValidatorDetails } from '#core/common/utils/class-validator/ClassValidator.js';
+import { Code } from '@/common/code/Code.js';
+import { Exception } from '@/common/exception/Exception.js';
+import { type Optional } from '@/common/types/common-types.js';
+import { ClassValidator, type ClassValidatorDetails } from '@/common/utils/class-validator/ClassValidator.js';
 
 export class Entity<TIdentity extends string | number> {
   protected id: Optional<TIdentity>;

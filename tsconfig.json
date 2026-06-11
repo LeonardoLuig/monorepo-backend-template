@@ -7,6 +7,7 @@
     "composite": true,
     "incremental": true,
     "experimentalDecorators": true,
+    "ignoreDeprecations": "6.0",
     "emitDecoratorMetadata": true,
     "strictPropertyInitialization": false,
     "strictNullChecks": true,

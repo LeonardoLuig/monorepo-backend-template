@@ -1,10 +1,8 @@
 import { IsDate, IsOptional, IsString } from 'class-validator';
 import { v7 } from 'uuid';
 
-import { Entity } from '#core/common/entity/Entity.js';
-import { type IRemovableEntity } from '#core/common/entity/IRemovableEntity.js';
-import { type Nullable } from '#core/common/types/common-types.js';
-import { type CreateRoleEntityPayload } from '#core/domain/role/entity/types/CreateRoleEntityPayload.js';
+import { Entity, IRemovableEntity, Nullable } from '@/common/index.js';
+import { CreateRoleEntityPayload } from '@/domain/role/entity/types/CreateRoleEntityPayload.js';
 
 export class Role extends Entity<string> implements IRemovableEntity {
   @IsString()

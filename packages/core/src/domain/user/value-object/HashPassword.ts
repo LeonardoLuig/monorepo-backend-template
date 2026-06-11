@@ -1,8 +1,7 @@
 import argon2 from 'argon2';
 import { Matches } from 'class-validator';
 
-import { HASH_PASSWORD_REGEX } from '#core/common/constants/regex.constants.js';
-import { ValueObject } from '#core/common/value-object/ValueObject.js';
+import { HASH_PASSWORD_REGEX, ValueObject } from '@/common/index.js';
 
 export class HashPassword extends ValueObject {
   @Matches(HASH_PASSWORD_REGEX, { message: 'Invalid hash password' })

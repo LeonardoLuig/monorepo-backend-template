@@ -1,2 +1,2 @@
-export * from '#core/common/index.js';
-export * from '#core/domain/index.js';
+export * from '@/common/index.js';
+export * from '@/domain/index.js';

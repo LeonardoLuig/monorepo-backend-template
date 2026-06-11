@@ -12,10 +12,7 @@ COPY apps/api/ ./apps/api/
 
 RUN pnpm install --frozen-lockfile
 
-RUN pnpm --filter @repo/core build
-RUN pnpm --filter @repo/config build
-RUN pnpm --filter @repo/database build
-RUN pnpm --filter @apps/api build
+RUN pnpm build
 
 FROM gcr.io/distroless/nodejs24-debian12 AS runnner
 

@@ -41,6 +41,9 @@ importers:
       nx:
         specifier: 22.7.1
         version: 22.7.1
+      tsc-alias:
+        specifier: ^1.8.17
+        version: 1.8.17
       turbo:
         specifier: ^2.9.12
         version: 2.9.16
@@ -188,9 +191,6 @@ importers:
       tsc-alias:
         specifier: ^1.8.17
         version: 1.8.17
-      typescript:
-        specifier: ^5.9.3
-        version: 5.9.3
 
   packages/database:
     dependencies:

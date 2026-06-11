@@ -1,1 +1,1 @@
-export * from '#config/env/DatabaseConfig.js';
+export { DatabaseConfig } from '@/env/DatabaseConfig.js';

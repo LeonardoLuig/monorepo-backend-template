@@ -9,6 +9,7 @@
   "packageManager": "pnpm@11.5.2",
   "type": "module",
   "scripts": {
+    "build": "nx run-many -t build",
     "api:build": "pnpm --filter @apps/api build",
     "api:start": "pnpm --filter @apps/api start",
     "api:dev": "pnpm --filter @apps/api start:dev",
@@ -28,6 +29,7 @@
     "eslint-plugin-simple-import-sort": "^13.0.0",
     "eslint-plugin-unused-imports": "^4.4.1",
     "nx": "22.7.1",
+    "tsc-alias": "^1.8.17",
     "turbo": "^2.9.12",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.60.0"

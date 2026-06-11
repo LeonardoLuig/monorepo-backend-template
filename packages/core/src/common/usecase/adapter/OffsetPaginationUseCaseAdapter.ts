@@ -1,8 +1,8 @@
 import { Type } from 'class-transformer';
 import { IsNumber } from 'class-validator';
 
-import { UseCaseAdapter } from '#core/common/usecase/adapter/UseCaseAdapter.js';
-import { type OffsetPaginationUseCasePort } from '#core/common/usecase/port/OffsetPaginationUseCasePort.js';
+import { UseCaseAdapter } from '@/common/usecase/adapter/UseCaseAdapter.js';
+import { OffsetPaginationUseCasePort } from '@/common/usecase/port/OffsetPaginationUseCasePort.js';
 
 export abstract class OffsetPaginationUseCaseAdapter extends UseCaseAdapter implements OffsetPaginationUseCasePort {
   @IsNumber()

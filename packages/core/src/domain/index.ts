@@ -1,2 +1,2 @@
-export * from '#core/domain/role/index.js';
-export * from '#core/domain/user/index.js';
+export * from '@/domain/role/index.js';
+export * from '@/domain/user/index.js';

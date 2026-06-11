@@ -1,13 +1,11 @@
 import { IsDate, IsEmail, IsInstance, IsOptional, IsString, IsUUID } from 'class-validator';
 import { v7 } from 'uuid';
 
-import { Entity } from '#core/common/entity/Entity.js';
-import { type IRemovableEntity } from '#core/common/entity/IRemovableEntity.js';
-import { type Nullable } from '#core/common/types/common-types.js';
-import { type CreateUserEntityPayload } from '#core/domain/user/entity/types/CreateUserEntityPayload.js';
-import { type EditUserEntityPayload } from '#core/domain/user/entity/types/EditUserEntityPayload.js';
-import { UserRole } from '#core/domain/user/entity/UserRole.js';
-import { HashPassword } from '#core/domain/user/value-object/HashPassword.js';
+import { Entity, IRemovableEntity, Nullable } from '@/common/index.js';
+import { CreateUserEntityPayload } from '@/domain/user/entity/types/CreateUserEntityPayload.js';
+import { EditUserEntityPayload } from '@/domain/user/entity/types/EditUserEntityPayload.js';
+import { UserRole } from '@/domain/user/entity/UserRole.js';
+import { HashPassword } from '@/domain/user/value-object/HashPassword.js';
 
 export class User extends Entity<string> implements IRemovableEntity {
   @IsUUID('7')

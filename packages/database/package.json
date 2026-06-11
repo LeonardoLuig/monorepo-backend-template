@@ -8,11 +8,9 @@
   "license": "UNLICENSED",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "imports": {
-    "#database/*": "./src/*"
-  },
   "scripts": {
-    "build": "rm -rf dist && tsc -p tsconfig.build.json"
+    "clean": "node -e \"require('fs').rmSync('dist', { recursive: true, force: true })\"",
+    "build": "node --run clean && tsc -p tsconfig.build.json && tsc-alias -p tsconfig.build.json"
   },
   "devDependencies": {
     "drizzle-kit": "^0.31.10",

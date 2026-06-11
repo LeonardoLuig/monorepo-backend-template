@@ -8,16 +8,13 @@
   "license": "UNLICENSED",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "imports": {
-    "#core/*": "./src/*"
-  },
   "scripts": {
-    "build": "rm -rf dist && tsc -p tsconfig.build.json"
+    "clean": "node -e \"require('fs').rmSync('dist', { recursive: true, force: true })\"",
+    "build": "node --run clean && tsc -p tsconfig.build.json && tsc-alias -p tsconfig.build.json"
   },
   "devDependencies": {
     "@types/node": "^24.12.4",
-    "tsc-alias": "^1.8.17",
-    "typescript": "^5.9.3"
+    "tsc-alias": "^1.8.17"
   },
   "dependencies": {
     "argon2": "^0.44.0",

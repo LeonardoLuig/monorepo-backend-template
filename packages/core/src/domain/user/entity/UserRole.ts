@@ -1,6 +1,6 @@
 import { IsString } from 'class-validator';
 
-import { Entity } from '#core/common/entity/Entity.js';
+import { Entity } from '@/common/index.js';
 
 export class UserRole extends Entity<string> {
   @IsString()
