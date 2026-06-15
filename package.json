@@ -6,7 +6,7 @@
   "keywords": [],
   "author": "Leonardo L. Belloni",
   "license": "ISC",
-  "packageManager": "pnpm@11.5.2",
+  "packageManager": "pnpm@11.6.0",
   "type": "module",
   "scripts": {
     "build": "nx run-many -t build",
